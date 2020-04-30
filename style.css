@@ -18,17 +18,20 @@ header{
 	width: 100%;
 	height: 100px;
 	background: rgba(0,0,0,.7);
+	font-family: 'Cabin', sans-serif;
+	font-weight: lighter;
 }
 
 .navbar1{
 	position: absolute;
 	z-index: 999;
 	float: left;
-	width: 565px;
+	width: 700px;
 	height: 30px;
 	font-size: 13px;
 	margin-left: 40px;
 }
+
 .breadcrumbs{
 	min-width: 100%;
 	color: white;
@@ -53,21 +56,15 @@ header{
 
 .navbar2{
 	position: absolute;
-	display: flex;
 	font-size: 15px;
-	font-style: font-family: 'Cabin', sans-serif;
 	letter-spacing: 2px;
 	padding: 40px 40px;
 	height: 100px;
 	width: 100%;
 }
-.left{
-	height: 60px;
-	flex: 3;
-}
 .navmenu{
 	list-style: none;
-	width: 530px;
+	width: 700px;
 	height: 60px;
 	margin-left: -20px;
 	justify-content: space-around;
@@ -78,19 +75,19 @@ header{
 	color: white;
 	margin: 0 20px;
 }
-.navmenu__links:hover{
+body a:hover{
 	cursor: pointer;
 	opacity: 0.5;
 	transition: all 0.3s ease;
 }
 
-.right{
+.reservation__btn img{
 	background-color: #5e8fa6;
-	width: 180px;
-	height: 54px;
+	width: 278px;
+	height: 62px;
 	position: absolute;
 	top: 19px;
-	right: 140px;
+	right: 40px;
 }
 
 .fullpage{
@@ -109,10 +106,9 @@ header{
 	width: 100%;
 	height: 100%;
 	z-index: -2;
-
 }
 .slider img{
-	max-width: 100%;
+	min-width: 100%;
 }
 
 .logo{
@@ -130,112 +126,156 @@ header{
 	background-color: rgba(0,0,0,.7);
 	color: white; 
 	width: 100%;
-	padding: 10px 40px;
+	padding: 15px 40px 0 40px;
 	height: 75px;
 	z-index: 130;
+	font-size: 15px;
 }
 
 .onlineshop-logo{
 	position: absolute;
-	right: 180px;
-	bottom: 15px;
+	right: 190px;
+	bottom: 10px;
 	opacity: 1 !important;
 	z-index: 150;
 }
 .onlineshop-logo img{
-	max-height: 44px;
+	height: 44px;
 }
 
 .recruit-logo{
 	position: absolute;
 	right: 40px;
-	bottom: 15px;
+	bottom: 10px;
 	opacity: 1 !important;
 	z-index: 150;
 }
 
-#concept{
+.wrapper{
 	position: relative;
 	margin: 0 auto 200px;	
-	padding: 100px 40px;
+	padding: 100px 60px;
 	background-color: #EFEDE6;
-	height: 1100px;
+	width: 1200px;
 }
+#concept .wrapper{
+	height: 1250px;
+}
+
 h2{
+	margin-bottom: 100px;
 	font-style: font-family: 'Pathway Gothic One', sans-serif;
 	font-size: 60px;
 	font-weight: lighter;
-	margin-bottom: 30px;
 	letter-spacing: 10px;
+	text-align: center;
 }
-
-.table1, .table2{
-	display: table;
+h3{
+	font-size: 20px;
 }
-
-.subheading_jpn{
-	font-size: 16px;
-	font-weight: bold;
-	margin-bottom: 10px;
+.sepline{
+	position: absolute;
+	background-color: rgba(0,0,0,.5);
+	width: 500px;
+	height: 1px;
+	margin-top: 440px;
+    left: 50%;
+    margin-left: -250px;
 }
 .table1{
 	position: absolute;
-	top: 250px;
+	display: table;
+	top: 300px;
+	padding: 0 60px 60px 20px;
+	width: 1100px;
 }
 .table1 .col-right1{
 	display: table-cell;
 	float: right;
-	max-width: 50%;
+	max-width: calc(50% - 70px);
+	overflow: hidden;
 }
-.table1 .col-right1 img{
+.table1 img{
 	max-width: 100%;
 }
 .table1 .col-left1{
 	display: table-cell;
-	float: left;
 	max-width: 50%;
-	padding-right: 20px;
-	vertical-align: center;
+	float: left;
+	padding-right: 0;
 }
 .table1 .text{
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 200%;
+	color: gray;
 }
 
-.subheading_eng{
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 5px;
-}
 .table2{
 	position: absolute;
-	bottom: 100px;
+	display: table;
+	top: 750px; 
+	padding: 40px 60px 60px 0;
+	width: 1100px;
+}
+.table2 img{
+	width: 450px;
 }
 .table2 .col-left2{
 	display: table-cell;
 	float: left;
-	max-width: 40%;
-	margin-right: 20px;
 }
-.table2 .col-left2 img{
-	max-width: 100%;
-}
+
 .table2 .col-right2{
 	display: table-cell;
 	float: right;
-	max-width: 50%;
-	padding-top: 30px;
+	padding-top: 70px;
+	width: 52%;
 }
 .table2 .text{
-	font-size: 15px;
+	font-size: 13px;
 	line-height: 200%;
+	color: gray;
+	max-width: 100%;
 }
 
-#menu{
-	position: relative;
-	margin: 0 auto 200px;	
-	padding: 100px 40px;
-	background-color: #EFEDE6;
-	height: 900px;
-	min-height: 100%;
+.menu_lists{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
 }
+
+.menu_display img{
+	max-width: 200px;
+	max-height: 200px;
+}
+.group1{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 100px 250px 0 250px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.modern-asian{
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 100px 500px;
+	color: white;
+}
+section{
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+footer{
+	background-color: white;
+	padding: 40px 40px;
+}
+
+footer{
+
+
+
